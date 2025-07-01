@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+/* Esto es el css del Hero */
+
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/Cuales\ son\ los\ mejores\ carros\ para\ comprar.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/* Encabezado*/
+.head{
+    width: 100%;
+    padding: 1rem 1rem;
+}
+.contenido{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#logo{
+    height: 100px;
+    width: 200px;
+}
+.botones{
+    font-weight: bolder;
+    border: none;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: x-large;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: white;
+}
+.botones:hover{
+    background-color: rgba(219, 219, 219, 0.205);
+}
+/* Encabezado*/
+/*Hero*/
+.hero{
+    width: 85%;
+    display: flex;
+    gap: 20px;
+    height: 70vh;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+}
+.frase{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#header1{
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: white;
+}
+.parrafo1{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+#button1{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(0, 68%, 42%);
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+}
+#button1:hover{
+    background-color: hsl(0, 100%, 56%);
+}
+/*Hero*/
+/* Esto es el css del Hero */
+/* Main articulo cuerpo */
+.principal{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.catalogo{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.content{
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem 15rem 15rem;
+    grid-template-rows: 17rem;
+}
+.header2{
+    font-weight: bolder;
+    font-size: xxx-large;
+    color:hsl(0, 68%, 42%);
+}
+#buton2{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(0, 68%, 42%);
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+    box-shadow: 5px 5px  lightgrey;
+}
+#buton2:hover{
+    background-color: hsl(0, 100%, 56%);
+}
+/* Contenido momentaneo*/
+.cuadrado{
+    border-radius: 10px;
+    box-shadow: 10px 10px  lightgrey;
+}
+.i1{
+    background-image: url("/images/0aa30f5d-1bc4-4352-9580-66b3782649d9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.i2{
+    background-image: url("/images/1_65044b4152b5d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.i3{
+    background-image: url("/images/converted_20322803_2e1ce237-f235-4f4a-adf8-b0857362bb7e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.i4{
+    background-image: url("/images/D_NQ_NP_892099-MLM83285967813_032025-O-volkswagen-virtus-2024.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.i5{
+    background-image: url("/images/images\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.i6{
+    background-image: url("/images/RT_V_0160876bba4842158ee83c656f3d390b.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Contenido momentaneo*/
+/*Forms*/
+.contactanos{
+    width: 100%;
+    background-color: hsl(0, 68%, 42%);
+    display: flex;
+    padding: 1rem 0;
+    padding-left: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.Articulo{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+    width: 60%;
+    justify-content: space-around;
+}
+.user{
+    display: flex;
+    gap: 10px;
+}
+.map{
+    flex: 1;
+    max-width: 600px;
+    width: 40%;
+}
+#mapi{
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+}
+#nombre,#Apellido,#email,#Asunto,#Mensaje{
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+    height: 3rem;
+}
+#nombre,#Apellido{
+    width: 100%;
+}
+#header3{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+#buton3{
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+    color: hsl(0, 68%, 42%);
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+}
+#buton3:hover{
+    background-color: hsl(0, 100%, 90%);
+}
+/*Forms*/
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 85%;
+    gap: 10px;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#logo2{
+    height: 14rem;
+    width: 17rem;
+}
+#parrafo0{
+    font-size: x-large;
+}
+/* Main articulo cuerpo */
+/*footer*/
+.footers{
+    width: 100vw;
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: hsl(0, 68%, 42%);
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    font-weight: bolder;
+}
+/*footer*/

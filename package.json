@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "aplicaciones_web_proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdsonDanielMartinezGodinez/Aplicaciones_Web_Proyecto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdsonDanielMartinezGodinez/Aplicaciones_Web_Proyecto/issues"
+  },
+  "homepage": "https://github.com/EdsonDanielMartinezGodinez/Aplicaciones_Web_Proyecto#readme"
+}
