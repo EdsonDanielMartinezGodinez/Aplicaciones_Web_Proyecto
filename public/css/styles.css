@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+}
+/* Esto es el css del Hero */
+.videofondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Lo manda al fondo detrás de todo */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 0.685); /* oscurece el fondo */
+    z-index: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+/* Encabezado*/
+.head{
+    position: fixed;
+    transition: 0.7s;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.head.abajo{
+    background-color: hsl(0, 68%, 42%);
+    box-shadow: 0 4px 2px -2px rgb(34, 34, 34);
+}
+.contenido{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 1;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+#logo{
+    height: 100px;
+    width: 200px;
+}
+.botones{
+    font-weight: bolder;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: x-large;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: white;
+}
+.botones:hover{
+    background-color: rgba(219, 219, 219, 0.205);
+}
+/* Encabezado*/
+/*Hero*/
+.hero{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 1;
+}
+.frase{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#header1{
+    font-weight: bolder;
+    font-size: xxx-large;
+    color: white;
+}
+.parrafo1{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+#button1{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(0, 68%, 42%);
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+}
+#button1:hover{
+    background-color: hsl(0, 100%, 56%);
+}
+/*Hero*/
+/* Esto es el css del Hero */
+/* Main articulo cuerpo */
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.catalogo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.content{
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
+    grid-template-rows: 17rem;
+}
+.Cuadrados{
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 10px 10px lightgray;
+}
+.Cuadrados:hover{
+    transform: scale(1.2);   
+}
+.header2{
+    font-weight: bolder;
+    font-size: xxx-large;
+    color:hsl(0, 68%, 42%);
+}
+#buton2{
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(0, 68%, 42%);
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+    box-shadow: 5px 5px  lightgrey;
+}
+#buton2:hover{
+    background-color: hsl(0, 100%, 56%);
+}
+/* Contenido momentaneo*/
+
+/* Contenido momentaneo*/
+/*Forms*/
+.contactanos{
+    width: 100%;
+    background-color: hsl(0, 68%, 42%);
+    display: flex;
+    padding: 1rem 0;
+    padding-left: 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.Articulo{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+    width: 60%;
+    justify-content: space-around;
+}
+.user{
+    display: flex;
+    gap: 10px;
+}
+.map{
+    flex: 1;
+    max-width: 600px;
+    width: 40%;
+}
+#mapi{
+    border-radius: 10px;
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+}
+#nombre,#Apellido,#email,#Asunto,#Mensaje{
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+    height: 3rem;
+}
+#nombre,#Apellido{
+    width: 100%;
+}
+#header3{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+#buton3{
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 10rem;
+    font-weight: bolder;
+    font-size: large;
+    transition: 0.5s;
+    color: hsl(0, 68%, 42%);
+    box-shadow: 5px 5px hsl(0, 100%, 80%);
+}
+#buton3:hover{
+    background-color: hsl(0, 100%, 90%);
+}
+/*Forms*/
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 80%;
+    gap: 10px;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#logo2{
+    height: 14rem;
+    width: 17rem;
+}
+#parrafo0{
+    font-size: x-large;
+}
+/* Main articulo cuerpo */
+/*footer*/
+.footers{
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    background-color: hsl(0, 68%, 42%);
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+    font-weight: bolder;
+}
+/*footer*/
