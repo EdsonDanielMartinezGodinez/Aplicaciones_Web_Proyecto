@@ -2,6 +2,7 @@ const catalogoPrincipal = document.querySelector(".catalogo");
 const contenidioCatalogo = document.querySelector(".sedans");
 const botonMas = document.getElementById("buton2");
 
+
 const header5 = document.createElement("h2");
 const header4 = document.createElement("h2");
 const header3 = document.createElement("h2");
@@ -10,18 +11,51 @@ const suvsContent = document.createElement("div");
 suvsContent.classList.add("content")
 const picksContent = document.createElement("div");
 picksContent.classList.add("content");
+const hatchBack = document.createElement("div");
+hatchBack.classList.add("content");
+const deportivosContent = document.createElement("div");
+deportivosContent.classList.add("content");
 
+function deportivosCreate(deportivo){
+    catalogoPrincipal.insertBefore(deportivosContent,botonMas)
+    for(i of deportivo){
+        const cuadrado4 = document.createElement("div");
+        cuadrado4.classList.add(`Cuadrados`);
+        cuadrado4.setAttribute('id', i.IDe);
+        cuadrado4.style.backgroundImage = `url("${i.Imagen}")`;
+        cuadrado4.style.backgroundSize = "contain";
+        cuadrado4.style.backgroundPosition = "center";
+        cuadrado4.style.backgroundRepeat= "no-repeat";
+        deportivosContent.appendChild(cuadrado4);
+        console.log(i.Imagen)
+    }
+}
+function hatchBackCreate(hatch){
+    catalogoPrincipal.insertBefore(hatchBack,header5)
+    for(i of hatch){
+        const cuadrado3 = document.createElement("div");
+        cuadrado3.classList.add(`Cuadrados`);
+        cuadrado3.setAttribute('id', i.IDe);
+        cuadrado3.style.backgroundImage = `url("${i.Imagen}")`;
+        cuadrado3.style.backgroundSize = "contain";
+        cuadrado3.style.backgroundPosition = "center";
+        cuadrado3.style.backgroundRepeat= "no-repeat";
+        hatchBack.appendChild(cuadrado3);
+        console.log(i.Imagen)
+    }
+}
 function pickUpCreate(picks){
     catalogoPrincipal.insertBefore(picksContent,header4)
     for(i of picks){
         const cuadrado2 = document.createElement("div");
         cuadrado2.classList.add(`Cuadrados`);
+        cuadrado2.setAttribute('id', i.IDe);
         cuadrado2.style.backgroundImage = `url("${i.Imagen}")`;
         cuadrado2.style.backgroundSize = "contain";
         cuadrado2.style.backgroundPosition = "center";
         cuadrado2.style.backgroundRepeat= "no-repeat";
         picksContent.appendChild(cuadrado2);
-        console.log(i.imagen)
+        console.log(i.Imagen)
     }
 }
 function suvCreate(suvs){
@@ -29,28 +63,30 @@ function suvCreate(suvs){
     for(i of suvs){
         const cuadrado1 = document.createElement("div");
         cuadrado1.classList.add(`Cuadrados`);
+         cuadrado1.setAttribute('id', i.IDe);
         cuadrado1.style.backgroundImage = `url("${i.Imagen}")`;
         cuadrado1.style.backgroundSize = "contain";
         cuadrado1.style.backgroundPosition = "center";
         cuadrado1.style.backgroundRepeat= "no-repeat";
         suvsContent.appendChild(cuadrado1);
-        console.log(i.imagen)
+        console.log(i.Imagen)
     }
 }
 function sedanCreate(sedans){
     for(i of sedans){
         const cuadrado = document.createElement("div");
         cuadrado.classList.add(`Cuadrados`);
+        cuadrado.setAttribute('id', i.IDe);
         cuadrado.style.backgroundImage = `url("${i.Imagen}")`;
         cuadrado.style.backgroundSize = "contain";
         cuadrado.style.backgroundPosition = "center";
         cuadrado.style.backgroundRepeat= "no-repeat";
         contenidioCatalogo.appendChild(cuadrado);
-        console.log(i.imagen)
+        console.log(i.Imagen)
     }
 }
 function Carros(id,imagen,tipo,marca,año,modelo,precio,kilometraje,transmision,combustible,intCol,extColor,estado,){
-    this.ID = id;
+    this.IDe = id;
     this.Imagen = imagen;
     this.Tipo = tipo;
     this.Marca = marca;
@@ -85,10 +121,24 @@ const Pick2 = new Carros("ford1","/images/ford.jpg","Pick Up","Ford","2022","F-1
 const Pick3 = new Carros("nissan2","/images/nissanPickup.webp","Pick Up","Nissan","2025","NP300","$100000","90000km","Estandar","Gasolina","Blanco","Negro","Seminuevo");
 const Pick4 = new Carros("gmc1","/images/GMC.avif","Pick Up","GMC","2024","Sierra","$700000","70000km","Estandar","Gasolina","Negro","Negro","Usado");
 const Pick5 = new Carros("chevrolet1","/images/chevrolet.avif","Pick Up","Chevrolet","2024","Montana RS","$500000","70000km","Estandar","Gasolina","Rojo","Negro","Usado");
+//Objetos para HatchBacks
+const hatch1 = new Carros("suzuki2","/images/susukiCelerio.jpg","Hatchback","Suzuki","2018","Celerio","$75000","100000km","Estandar","Gasolina","Azul","Negro","Usado");
+const hatch2 = new Carros("suzuki3","/images/suzukiBOO.jpg","Hatchback","Suzuki","2019","BOO","$80000","80000km","Estandar","Gasolina","Rojo","Negro","Seminuevo");
+const hatch3 = new Carros("hyundai1","/images/hyunday.jpg","Hatchback","Hyundai","2020","Eon","$100000","90000km","Estandar","Gasolina","Azul Marino","Negro","Usado");
+const hatch4 = new Carros("toyota2","/images/yarisHatchback.jpg","Hatchback","Toyota","2019","Yaris Hatchback","$700000","70000km","Estandar","Gasolina","Blanco","Negro","Usado");
+const hatch5 = new Carros("suzuki4","/images/suzukiswift.jpg","Hatchback","Suzuki","2017","Swift","$500000","70000km","Estandar","Gasolina","Rojo","Negro","Usado");
+//Objetos para Deportivos
+const deportivo1 = new Carros("porsche1","/images/porche.jpg","Deportivo","Porsche","2022","Porsche 911","$700000","100000km","Automatico","Electrico","Blanco","Negro","Seminuevo");
+const deportivo2 = new Carros("mclaren1","/images/mclaren.jpg","Deportivo","McLaren","2014","P1","$600000","80000km","Automatico","Gasolina","Blanco","Negro","Seminuevo");
+const deportivo3 = new Carros("lamborgini1","/images/lamborgini huracan.jpg","Deportivo","Lamborghini","2015","Huracan","$1000000","90000km","Automatico","Gasolina","Blanco","Negro","Usado");
+const deportivo4 = new Carros("chevrolet2","/images/camaro.png","Deportivo","Chevrolet","2019","Camaro","$700000","70000km","Estandar","Gasolina","Rojo","Negro","Usado");
+const deportivo5 = new Carros("aston1","/images/aston.webp","Deportivo","Aston Martin","2019","V8","$5000000","70000km","Estandar","Electrico","Blanco","Negro","Seminuevo");
 
 const arrSedan = [Sedan1,Sedan2,Sedan3,Sedan4,Sedan5];
 const arrSUV = [Suv1,Suv2,Suv3,Suv4,Suv5];
 const arrPickUp = [Pick1,Pick2,Pick3,Pick4,Pick5];
+const arrHatch = [hatch1,hatch2,hatch3,hatch4,hatch5];
+const arrDeportivo = [deportivo1,deportivo2,deportivo3,deportivo4,deportivo5];
 
 let checkStatus = 1;
 
@@ -106,11 +156,15 @@ botonMas.addEventListener("click",() => {
 
         suvCreate(arrSUV);
         pickUpCreate(arrPickUp);
+        hatchBackCreate(arrHatch);
+        deportivosCreate(arrDeportivo);
         botonMas.textContent = "Contraer";
         return checkStatus = 0;
     }else if(checkStatus == 0){
         suvsContent.innerHTML = "";
         picksContent.innerHTML="";
+        hatchBack.innerHTML="";
+        deportivosContent.innerHTML="";
         catalogoPrincipal.removeChild(header2);
         catalogoPrincipal.removeChild(suvsContent);
         catalogoPrincipal.removeChild(header3);
@@ -125,3 +179,84 @@ window.addEventListener("scroll",() => {
     const headerAction = document.querySelector(".head");
     headerAction.classList.toggle("abajo",window.scrollY > 0);
 });
+
+catalogoPrincipal.addEventListener("click",(e) => {
+    let target = e.target;
+    switch(target.id){
+        case "hon1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "bmw1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "toyota1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "volkswagen1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "mazda1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "volkswagen2":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "kia1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "suzuki1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "volvo1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "nissan1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "gwm1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "ford1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "nissan2":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "gmc1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "chevrolet1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "suzuki2":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "suzuki3":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "hiundai1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "toyota2":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "suzuki4":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "porsche1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "mclaren1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "lamborgini1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "chevrolet2":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+        case "aston1":
+            window.location.href = "./archivos_carros.html"; 
+            break;
+    }
+})
