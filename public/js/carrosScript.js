@@ -13,11 +13,11 @@ const valor = document.getElementById("precio");
 const descCarro = document.querySelector(".descripcion");  
 
 const carro = JSON.parse(localStorage.getItem("carro"));
+const descText = localStorage.getItem("desc");
 
-const colorExt = document.createElement("div");
-const colorInt = document.createElement("div");
+const parrafoDesc = document.createElement("p");
 
-function crearFormato(arr){
+function crearFormato(arr,text1){
     imagenCarro.style.backgroundImage = `url("${arr.Imagen}")`;
     imagenCarro.style.backgroundRepeat = "no-repeat";
     imagenCarro.style.backgroundSize = "contain";
@@ -32,6 +32,8 @@ function crearFormato(arr){
     com.textContent = `Combustible: ${arr.Combustible}`;
     kilometraje.textContent = `Km: ${arr.Kilometraje}`;
     valor.textContent = `Precio: ${arr.Precio}`;
+    parrafoDesc.textContent = `${text1}`;
+    descCarro.appendChild(parrafoDesc);
 }
 
-crearFormato(carro);
+crearFormato(carro,descText);

@@ -1,8 +1,6 @@
-
 const catalogoPrincipal = document.querySelector(".catalogo");
 const contenidioCatalogo = document.querySelector(".sedans");
 const botonMas = document.getElementById("buton2");
-
 
 const header5 = document.createElement("h2");
 const header4 = document.createElement("h2");
@@ -186,128 +184,129 @@ catalogoPrincipal.addEventListener("click",(e) => {
     switch(target.id){
         case "hon1":
             localStorage.setItem("carro",JSON.stringify(Sedan1));
-            localStorage.setItem("desc",JSON.stringify("Honda Civic 2022, seminuevo, elegante diseño y eficiente consumo de gasolina."));
+            localStorage.setItem("desc","Honda Civic 2022, seminuevo, elegante diseño y eficiente consumo de gasolina.");
             window.location.href = "./archivos_carros.html";
             break;
         case "bmw1":
             localStorage.setItem("carro",JSON.stringify(Sedan2));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "toyota1":
             localStorage.setItem("carro",JSON.stringify(Sedan3));
-            localStorage.setItem("desc",JSON.stringify("Toyota Corolla 2024, confiabilidad japonesa en estado usado y transmisión estándar."));
+            localStorage.setItem("desc","Toyota Corolla 2024, confiabilidad japonesa en estado usado y transmisión estándar.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "volkswagen1":
             localStorage.setItem("carro",JSON.stringify(Sedan4));
-            localStorage.setItem("desc",JSON.stringify("Volkswagen Virtus 2020, sedán eléctrico, ideal para ciudad y viajes."));
+            localStorage.setItem("desc","Volkswagen Virtus 2020, sedán eléctrico, ideal para ciudad y viajes.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "mazda1":
             localStorage.setItem("carro",JSON.stringify(Sedan5));
-            localStorage.setItem("desc",JSON.stringify("Mazda 3 2018, estilo deportivo, motor estándar y excelente manejo urbano."));
+            localStorage.setItem("desc","Mazda 3 2018, estilo deportivo, motor estándar y excelente manejo urbano.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "volkswagen2":
             localStorage.setItem("carro",JSON.stringify(Suv1));
-            localStorage.setItem("desc",JSON.stringify("Volkswagen Taigun 2020, SUV espaciosa, usada, cómoda y eficiente."));
+            localStorage.setItem("desc","Volkswagen Taigun 2020, SUV espaciosa, usada, cómoda y eficiente.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "kia1":
             localStorage.setItem("carro",JSON.stringify(Suv2));
-            localStorage.setItem("desc",JSON.stringify("Kia Seltos 2024, diseño moderno, seminueva, ideal para familias pequeñas."));
+            localStorage.setItem("desc","Kia Seltos 2024, diseño moderno, seminueva, ideal para familias pequeñas.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "suzuki1":
             localStorage.setItem("carro",JSON.stringify(Suv3));
-            localStorage.setItem("desc",JSON.stringify("Suzuki S-Cross 2023, SUV negra, práctica y en excelente estado."));
+            localStorage.setItem("desc","Suzuki S-Cross 2023, SUV negra, práctica y en excelente estado.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "volvo1":
             localStorage.setItem("carro",JSON.stringify(Suv4));
-            localStorage.setItem("desc",JSON.stringify("Volvo Changan 2022, SUV seminueva con enfoque en seguridad y confort."));
+            localStorage.setItem("desc","Volvo Changan 2022, SUV seminueva con enfoque en seguridad y confort.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "nissan1":
             localStorage.setItem("carro",JSON.stringify(Suv5));
-            localStorage.setItem("desc",JSON.stringify("Nissan X-Trail 2024, SUV robusta, buena para caminos largos y urbanos."));
+            localStorage.setItem("desc","Nissan X-Trail 2024, SUV robusta, buena para caminos largos y urbanos.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "gwm1":
             localStorage.setItem("carro",JSON.stringify(Pick1));
-            localStorage.setItem("desc",JSON.stringify("GWM Poer 2024, pick up seminueva, lista para trabajo rudo y aventura."));
+            localStorage.setItem("desc","GWM Poer 2024, pick up seminueva, lista para trabajo rudo y aventura.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "ford1":
             localStorage.setItem("carro",JSON.stringify(Pick2));
-            localStorage.setItem("desc",JSON.stringify("Ford F-150 2022, pick up potente, confiable, lista para todo terreno."));
+            localStorage.setItem("desc","Ford F-150 2022, pick up potente, confiable, lista para todo terreno.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "nissan2":
             localStorage.setItem("carro",JSON.stringify(Pick3));
-            localStorage.setItem("desc",JSON.stringify("Nissan NP300 2025, camioneta estándar, gran capacidad de carga y durabilidad."));
+            localStorage.setItem("desc","Nissan NP300 2025, camioneta estándar, gran capacidad de carga y durabilidad.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "gmc1":
             localStorage.setItem("carro",JSON.stringify(Pick4));
-            localStorage.setItem("desc",JSON.stringify("GMC Sierra 2024, pick up de lujo, gran motor y diseño sofisticado."));
+            localStorage.setItem("desc","GMC Sierra 2024, pick up de lujo, gran motor y diseño sofisticado.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "chevrolet1":
             localStorage.setItem("carro",JSON.stringify(Pick5));
-            localStorage.setItem("desc",JSON.stringify("Chevrolet Montana RS 2024, pick up deportiva, moderna y ágil."));
+            localStorage.setItem("desc","Chevrolet Montana RS 2024, pick up deportiva, moderna y ágil.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "suzuki2":
             localStorage.setItem("carro",JSON.stringify(hatch1));
-            localStorage.setItem("desc",JSON.stringify("Suzuki Celerio 2018, hatchback compacto, económico y fácil de manejar."));
+            localStorage.setItem("desc","Suzuki Celerio 2018, hatchback compacto, económico y fácil de manejar.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "suzuki3":
             localStorage.setItem("carro",JSON.stringify(hatch2));
-            localStorage.setItem("desc",JSON.stringify("Suzuki BOO 2019, opción seminueva, diseño juvenil y muy rendidora."));
+            localStorage.setItem("desc","Suzuki BOO 2019, opción seminueva, diseño juvenil y muy rendidora.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "hiundai1":
             localStorage.setItem("carro",JSON.stringify(hatch3));
-            localStorage.setItem("desc",JSON.stringify("Hyundai Eon 2020, hatchback pequeño, ideal para ciudad y primer auto."));
+            localStorage.setItem("desc","Hyundai Eon 2020, hatchback pequeño, ideal para ciudad y primer auto.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "toyota2":
             localStorage.setItem("carro",JSON.stringify(hatch4));
-            localStorage.setItem("desc",JSON.stringify("Toyota Yaris Hatchback 2019, confiable, espacioso y muy funcional."));
+            localStorage.setItem("desc","Toyota Yaris Hatchback 2019, confiable, espacioso y muy funcional.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "suzuki4":
             localStorage.setItem("carro",JSON.stringify(hatch5));
-            localStorage.setItem("desc",JSON.stringify("Suzuki Swift 2017, hatchback rojo, estilo deportivo y rendimiento sólido."));
+            localStorage.setItem("desc","Suzuki Swift 2017, hatchback rojo, estilo deportivo y rendimiento sólido.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "porsche1":
             localStorage.setItem("carro",JSON.stringify(deportivo1));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","Porsche 911 2022, deportivo eléctrico, lujo y potencia en uno solo.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "mclaren1":
             localStorage.setItem("carro",JSON.stringify(deportivo2));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","McLaren P1 2014, superdeportivo icónico, diseño aerodinámico y veloz.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "lamborgini1":
             localStorage.setItem("carro",JSON.stringify(deportivo3));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","Lamborghini Huracan 2015, potencia brutal, diseño italiano y exclusividad.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "chevrolet2":
             localStorage.setItem("carro",JSON.stringify(deportivo4));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","Chevrolet Camaro 2019, musculoso, clásico americano, en color rojo.");
             window.location.href = "./archivos_carros.html"; 
             break;
         case "aston1":
             localStorage.setItem("carro",JSON.stringify(deportivo5));
-            localStorage.setItem("desc",JSON.stringify("BMW Serie 1 2020, lujo compacto con motor híbrido y gran desempeño."));
+            localStorage.setItem("desc","Aston Martin V8 2019, deportivo eléctrico, lujo británico con gran estilo.");
             window.location.href = "./archivos_carros.html"; 
             break;
     }
 });
+

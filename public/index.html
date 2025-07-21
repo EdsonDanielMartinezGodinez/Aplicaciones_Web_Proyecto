@@ -43,13 +43,12 @@
             <article class="Articulo">                
                 <form class="forms">
                     <div class="user">
-                        <input type="text" placeholder="Nombre" id="nombre" name="nombre">
-                        <input type="text" placeholder="Apellido" id="Apellido" name="Apellido">
+                        <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
+                        <input type="text" placeholder="Apellido" id="Apellido" name="Apellido" required>
                     </div>
-                    <input type="text" name="email" id="email" placeholder="e-mail">
-                    <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
-                    <input type="text" name="Mensaje" id="Mensaje" placeholder="Mensaje">
-                    <button id="buton3">Enviar</button>
+                    <input type="text" name="email" id="email" placeholder="e-mail" required>
+                    <input type="text" name="Mensaje" id="Mensaje" placeholder="Mensaje" required>
+                    <button type="submit" id="buton3">Enviar</button>
                 </form>
                 <section class="map">
                     <iframe id="mapi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29538.42679936541!2d-97.91190982568355!3d22.26649600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7fa20e89be24b%3A0xbe7c003f2c22f782!2sKia%20Avenida!5e0!3m2!1ses-419!2smx!4v1751320771314!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -80,5 +79,18 @@
             <p>&copy; 2025 TeCars. Todos los derechos reservados.</p>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    emailjs.init('nJuor5g2NW8fAM2dv');
+    const form = document.querySelector(".forms");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_77vatma', 'template_rxch7kn', this)
+        .then(() => alert('Correo enviado con éxito'))
+        .catch((error) => alert('Error: ' + error.text));
+    });
+    </script>
 </body>
 </html>

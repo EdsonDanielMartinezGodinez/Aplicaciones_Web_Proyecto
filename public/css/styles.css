@@ -220,7 +220,7 @@ body{
     border-radius: 10px;
     box-shadow: 5px 5px hsl(0, 100%, 80%);
 }
-#nombre,#Apellido,#email,#Asunto,#Mensaje{
+#nombre,#Apellido,#email,#Mensaje{
     border-radius: 4px;
     border: none;
     padding: 0.5rem;
@@ -351,6 +351,8 @@ body{
     border: 1px solid lightgray;
     display: flex;
     flex-grow: 1;
+    padding: 5px;
+    font-size: large;
 }
 .blancos{
     gap: 5px;
