@@ -339,14 +339,31 @@ body{
 }
 .img{
     border: 1px solid lightgray;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 .Carros{
     border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 .descripcion{
+    border: 1px solid lightgray;
     display: flex;
+    flex-grow: 1;
+}
+.blancos{
+    gap: 5px;
+    display: flex;
+    flex-grow: 1;
+    padding: 0 5px;
+    align-items: center;
+}
+.rojos{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    background-color: hsl(0, 93%, 89%);
     flex-grow: 1;
 }
 /*Cuerpo Principal*/
