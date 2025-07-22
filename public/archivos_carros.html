@@ -26,11 +26,30 @@
                 </div>
             </section>
             <section class="descripcion"></section>
+            <form class="formulario">
+                <input class="formStyle" type="text" name="nombre" placeholder="Nombre....">
+                <input class="formStyle" type="text" name="email" placeholder="Email....">
+                <input class="formStyle" type="text" name="carro" id="modelo" value="">
+                <input class="formStyle" type="text" name="marca" id="marca1" value="">
+                <input class="formStyle" type="text" name="precio" id="precio1" value="">
+                <button class="botonAutos" type="submit" id="botonID">Enviar</button>
+            </form>
         </section>
         <section class="botonesAutos">
             <a href="index.html"><button class="botonAutos">Retroceder</button></a>
-            <button class="botonAutos">Enviar</button>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+    emailjs.init('nJuor5g2NW8fAM2dv');
+    const form = document.querySelector(".formulario");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_1hkpe03', 'template_zx8qsoe', this)
+        .then(() => alert('Correo enviado con éxito'))
+        .catch((error) => alert('Error: ' + error.text));
+    });
+    </script>
 </body>
 </html>

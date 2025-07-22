@@ -16,9 +16,9 @@
                 <img id="logo" src="/images/Frame 1 (1).png" alt="Logo empresarial">
                 <nav class="nav">
                     <a href=""><button class="botones">Inicio</button></a>
-                    <a href=""><button class="botones">Catalogo</button></a>
-                    <a href=""><button class="botones">Contactanos</button></a>
-                    <a href=""><button class="botones">Conocenos</button></a>
+                    <a href="#catalogoID"><button class="botones">Catalogo</button></a>
+                    <a href="#contactanosID"><button class="botones">Contactanos</button></a>
+                    <a href="#acercaID"><button class="botones">Conocenos</button></a>
                 </nav>
             </section>
         </section>
@@ -32,13 +32,13 @@
         </section>
     </header>
     <main class="principal">
-        <section class="catalogo">
+        <section id="catalogoID" class="catalogo">
             <h1 class="header2">Nuestro catalaogo</h1>
             <h2>Sedan</h2>
             <div class="content sedans"></div>
             <button id="buton2">Mas</button>
         </section>
-        <section class="contactanos">
+        <section id="contactanosID" class="contactanos">
             <h1 id="header3">Contactanos</h1>
             <article class="Articulo">                
                 <form class="forms">
@@ -55,7 +55,7 @@
                 </section>
             </section>
         </article>
-        <section class="aboutus">
+        <section id="acercaID" class="aboutus">
             <h1 class="header2">Acerca de Nosotros</h1>
             <section class="inside">
                 <p id="parrafo0">En TeCars, no solo vendemos autos: construimos confianza.
@@ -87,7 +87,7 @@
 
     form.addEventListener("submit", function(e) {
         e.preventDefault();
-        emailjs.sendForm('service_77vatma', 'template_rxch7kn', this)
+        emailjs.sendForm('service_1hkpe03', 'template_rxch7kn', this)
         .then(() => alert('Correo enviado con éxito'))
         .catch((error) => alert('Error: ' + error.text));
     });

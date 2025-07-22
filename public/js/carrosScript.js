@@ -10,7 +10,10 @@ const trans = document.getElementById("trans");
 const com = document.getElementById("combustible");
 const kilometraje = document.getElementById("km");
 const valor = document.getElementById("precio");
-const descCarro = document.querySelector(".descripcion");  
+const descCarro = document.querySelector(".descripcion");
+const formModelo = document.getElementById("modelo");
+const formMarca = document.getElementById("marca1"); 
+const formPrecio = document.getElementById("precio1");  
 
 const carro = JSON.parse(localStorage.getItem("carro"));
 const descText = localStorage.getItem("desc");
@@ -34,6 +37,9 @@ function crearFormato(arr,text1){
     valor.textContent = `Precio: ${arr.Precio}`;
     parrafoDesc.textContent = `${text1}`;
     descCarro.appendChild(parrafoDesc);
+    formModelo.value = `${arr.Modelo}`;
+    formMarca.value = `${arr.Marca}`;
+    formPrecio.value = `${arr.Precio}`;
 }
 
 crearFormato(carro,descText);

@@ -368,5 +368,11 @@ body{
     background-color: hsl(0, 93%, 89%);
     flex-grow: 1;
 }
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 17rem;
+}
 /*Cuerpo Principal*/
 /*Archivo de los carros*/
